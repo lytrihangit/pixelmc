@@ -14,15 +14,11 @@
 		"win": {
 			"target": "nsis",
 			"icon": "app/static/media/faviconx256.ico",
-			"publish": {
-				"provider": "generic",
-				"url" : "https://github.com/lytrihangit/pixel-launcher.git"
-			}
+			"publish":[{
+				"provider": "generic", 
+				"url": "https://github.com/lytrihangit/pixel-launcher.git"
+			}]
 		},
-		"publish": [{
-			"provider": "generic",
-			"url": "https://github.com/lytrihangit/pixel-launcher.git"
-		}],
 		"asar": true,
 		"directories": {
 			"output": "release/"
