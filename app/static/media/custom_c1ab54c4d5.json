@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "config.zip",
+			"url": "http://103.92.26.5:1337/uploads/config_5368fdba9c.zip",
+			"unpack":true
+		},
+		{
+			"path": "resourcepacks/PixelMC.zip",
+			"url": "http://103.92.26.5:1337/uploads/Pixel_MC_325871d8f9.zip"
+		},
+		{
+			"path": "journeymap.zip",
+			"url": "http://103.92.26.5:1337/uploads/journeymap_450030cc34.zip",
+			"unpack": true
+		}
+	]
+}
