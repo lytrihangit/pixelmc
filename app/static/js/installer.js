@@ -105,6 +105,7 @@ const p12 = "Đang tải các thư mục...";
 
 function init(appPath) {
 	fsExtra.emptyDirSync(PIXEL_DIR);
+	fsExtra.emptyDirSync(MOD_PATH);
 	if (!fs.existsSync(PIXEL_DIR)) fs.mkdirSync(PIXEL_DIR);
 	if (!fs.existsSync(FILES_PATH)) fs.mkdirSync(FILES_PATH);
 	if (!fs.existsSync(GAME_DIR)) fs.mkdirSync(GAME_DIR, { recursive: true });

@@ -1,6 +1,6 @@
 {
 	"name": "pixelmc-launcher",
-	"version": "1.1.19",
+	"version": "1.1.18",
 	"description": "Pixel Launcher",
 	"main": "./app/app.js",
 	"productName": "Pixel Launcher",
@@ -16,7 +16,8 @@
 			"icon": "app/static/media/faviconx256.ico",
 			"publish":[{
 				"provider": "generic", 
-				"url": "https://github.com/lytrihangit/pixel-launcher.git"
+				"url": "https://github.com/lytrihangit/pixel-launcher.git",
+				"channel": "latest"
 			}]
 		},
 		"asar": true,

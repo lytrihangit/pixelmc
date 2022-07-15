@@ -3,7 +3,8 @@ const { app, ipcMain, BrowserWindow, Notification, dialog, ipcRenderer } = requi
 const { autoUpdater } = require("electron-updater");
 const url = require("url");
 const path = require("path");
-const hwid = require(`node-hwid`)
+const hwid = require(`node-hwid`);
+const { auto } = require("async");
 
 var mainWin;
 
@@ -67,6 +68,7 @@ function mainWindow() {
 	mainWin.on("closed", function () {
 		mainWin = null;
 	});
+
     mainWin.on("ready-to-show", () => {
         autoUpdater.checkForUpdates();
         mainWin.webContents.executeJavaScript(`sessionStorage.setItem("updateAvailable", false);`).then();
